@@ -1,62 +1,53 @@
-# 🔐 Java OTP Generator
+# 🔐 OTP Generator and Login System (Java Project)
 
-A simple Java program to generate secure, random OTPs (One-Time Passwords) using a combination of characters, numbers, and symbols.
-
----
-
-## 🧠 Overview
-
-This project demonstrates the use of Java's `Random` class to create secure OTPs or passwords. It includes logic to pick random characters from a mixed pool of:
-
-- Uppercase letters (A–Z)
-- Lowercase letters (a–z)
-- Numbers (0–9)
-- Symbols (!@#$%^&*_=+-/.?<>)  
+This is a beginner-friendly Java project that demonstrates the generation of a secure OTP (One-Time Password) and authenticates a user login based on it. The system provides three attempts to enter the correct OTP before denying access.
 
 ---
 
-## ✅ Features
+## 📌 Features
 
-- Generate OTPs or passwords of custom length
-- Includes all essential character types
-- Fast, secure, and easy to integrate into larger systems
-- Console-based, beginner-friendly implementation
-
----
-
-## 📁 File
-
-### `OTPGenerator.java`
-
-- Contains the main class and method
-- Defines the character pool and password generation logic
-- Uses `Random` to generate unpredictable output
+- ✅ Generates a secure, random OTP (default length: 10 characters)
+- ✅ OTP includes:
+  - Capital Letters
+  - Small Letters
+  - Digits
+  - Special Symbols
+- ✅ Displays the generated OTP for testing/demo purposes
+- ✅ Allows user to input OTP with 3 attempts
+- ✅ Grants access upon correct entry
+- ❌ Denies access after 3 incorrect attempts
 
 ---
 
-## 🔧 How It Works
+## 🛠 Technologies Used
 
-1. Define the desired OTP/password length
-2. Use character sets for uppercase, lowercase, numbers, and symbols
-3. Randomly pick characters from the full pool
-4. Print the generated OTP
-
----
-
-## 📚 Concepts Used
-
-- Java Strings and character manipulation
-- `Random` class for generating randomness
-- Array and loop operations
-- String concatenation
+- 💻 Java (JDK 8+)
+- 🔄 Loops and Conditionals
+- 🎲 `Random` class for OTP generation
+- 📥 `Scanner` class for user input
+- 🔐 Basic login authentication logic
 
 ---
 
-## 🚀 Future Improvements
+## 🚀 How It Works
 
-- Allow user to specify desired OTP length
-- Option to include/exclude symbols
-- GUI-based interface
+1. Program generates a random password/OTP.
+2. OTP is shown on the screen.
+3. User is asked to enter the password.
+4. If entered password matches:
+   - ✅ Login successful.
+5. If incorrect:
+   - ⚠️ Warning with remaining attempts.
+   - ❌ Access denied after 3 wrong attempts.
 
 ---
 
+## 📚 Concepts Demonstrated
+
+- Random character generation
+- Char arrays and Strings
+- Basic authentication mechanism
+- Console input/output
+- Loops and decision-making
+
+---
